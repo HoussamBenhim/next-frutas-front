@@ -16,9 +16,9 @@ const Hero = () => {
     }
     return (
 
-        <div className="relative isolate pt-14 flex flex-row justify-between items-center overflow-y-hidden container" >
+        <div className=" pt-14 flex flex-row justify-between items-center overflow-y-hidden " >
 
-            <div className="mx-auto w-4/5 sm:w-3/4 lg:w-2/3 py-32 sm:py-48  lg:py-56 border-2 border-black">
+            <div className="mx-auto w-4/5 sm:w-3/4 lg:w-4/5 py-32 sm:py-48  lg:py-56 ">
                 {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                         Announcing our next round of funding.{' '}
@@ -28,26 +28,21 @@ const Hero = () => {
                         </a>
                     </div>
                 </div> */}
-                <div className="flex flex-col justify-between">
-                    <div className="relative">
+                <div className="flex flex-col justify-between ">
+                    
                         <div className="flex flex-col justify-center  lg:mx-16 z-50">
-                            <h1 className="font-bold tracking-tight text-left font-lob text-gray-900 text-4xl sm:text-6xl">
-                                Des saveurs fraîches
+                            <h1 className="font-bold tracking-normal  text-left font-lob text-gray-900 text-4xl sm:text-6xl">
+                                Commandez vos fruits et légumes ici!
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Nous produisons, nous même, au Maroc et en Espagne des fruits et légumes frais que nous commercialisons, nous sommes présents en France, Espagne, Belgique, Allemagne, Danemark, Angleterre,
+                            <p className="my-6  text-lg leading-8 text-gray-600">
+                                Nous produisons, nous même, au Maroc et en Espagne des fruits et légumes frais que nous commercialisons en Europe. Nous sommes présents en France en Espagnee, et en Belgique.
                             </p>
-                        </div>
-                        <div>
                             <CustomButton
                                 title="Passer une commande"
-                                containerStyle="rounded-md bg-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-second-green hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                containerStyles="w-max rounded-full bg-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-second-green hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 handelClick={handelClick}
                             />
                         </div>
-
-
-                    </div>
                 </div>
             </div>
             <div className=' hidden w-full max-w-3xl lg:flex h-96 '>
