@@ -2,12 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import banane from '../public/assets/images/bananas-575773_640.png'
 import istockphoto from '../public/assets/images/istockphoto-1487569726-1024x1024.jpg'
-import cerise from '../public/assets/images/cherries-158241_640.png'
-import coco from '../public/assets/images/coconut-575780_640.png'
-import pasteque from '../public/assets/images/fruit-2850840_640.png'
-import fraise from '../public/assets/images/strawberry-37781_640.png'
 import { CustomButton } from '.';
 
 const Hero = () => {
@@ -16,9 +11,9 @@ const Hero = () => {
     }
     return (
 
-        <div className=" pt-14 flex flex-row justify-between items-center overflow-y-hidden " >
+        <div className=" pt-14 flex flex-row justify-between items-center overflow-y-hidden my-10" >
 
-            <div className="mx-auto w-4/5 sm:w-3/4 lg:w-4/5 py-32 sm:py-48  lg:py-56 ">
+            <div className="mx-auto w-3/5 sm:w-3/4 lg:w-4/5 py-32 sm:py-48  lg:py-56 ">
                 {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                         Announcing our next round of funding.{' '}
@@ -39,7 +34,7 @@ const Hero = () => {
                             </p>
                             <CustomButton
                                 title="Passer une commande"
-                                containerStyles="w-max rounded-full bg-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-second-green hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                containerStyles="w-max rounded-full bg-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 handelClick={handelClick}
                             />
                         </div>

@@ -17,7 +17,10 @@ const config: Config = {
         'light-green': '#EEFFF9',
         'second-green':'#D8E9C5',
         'green': '#0C462E',
-        'yellow': '#FFE03A'
+        'moss-green' : '#7A926B',
+        'yellow': '#FFE03A',
+        'vanilla': '#7A926B',
+        'naples-yellow': '#EFCB68'
       },
       space: {
         '128': '32rem',
