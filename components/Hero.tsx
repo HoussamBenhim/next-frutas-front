@@ -11,7 +11,7 @@ const Hero = () => {
     }
     return (
 
-        <div className=" pt-14 flex flex-row justify-between items-center overflow-y-hidden my-10" >
+        <div className=" pt-14 flex flex-row justify-between items-center overflow-hidden my-10" >
 
             <div className="mx-auto w-3/5 sm:w-3/4 lg:w-4/5 py-32 sm:py-48  lg:py-56 ">
                 {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">

@@ -4,3 +4,8 @@ export interface CustomButtonProps{
     containerStyles?: String;
     handelClick?:MouseEventHandler<HTMLButtonElement>
 }
+
+export interface SearchProductProps{
+    product: String;
+    setProduct:(product:string)=>void
+}
