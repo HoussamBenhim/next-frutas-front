@@ -5,6 +5,7 @@ import Footer from './Footer'
 import CustomFilter from './CustomFilter'
 import SearchBar from './SearchBar'
 import SearchProduct from './SearchProduct'
+import SignInOut from './SignInOut'
 export{
     Hero,
     CustomButton,
@@ -12,5 +13,6 @@ export{
     Footer,
     CustomFilter,
     SearchBar,
-    SearchProduct
+    SearchProduct,
+    SignInOut
 }
