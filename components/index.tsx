@@ -6,6 +6,7 @@ import CustomFilter from './CustomFilter'
 import SearchBar from './SearchBar'
 import SearchProduct from './SearchProduct'
 import SignInOut from './SignInOut'
+import ProductList from './ProductList'
 export{
     Hero,
     CustomButton,
@@ -14,5 +15,6 @@ export{
     CustomFilter,
     SearchBar,
     SearchProduct,
-    SignInOut
+    SignInOut,
+    ProductList
 }

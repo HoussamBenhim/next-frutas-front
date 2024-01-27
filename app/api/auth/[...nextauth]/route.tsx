@@ -33,7 +33,7 @@ export const authOptions = {
         KeycloakProvider({
             clientId: `${process.env.FRONTEND_CLIENT_ID}`,
             issuer: `${process.env.AUTH_ISSUER}`,
-            clientSecret: `${process.env.FRONTEND_CLIENT_SECRET}`
+            clientSecret: `${process.env.FRONTEND_CLIENT_SECRET}`,
         })
     ],
     callbacks: {

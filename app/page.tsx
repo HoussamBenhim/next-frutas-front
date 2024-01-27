@@ -1,4 +1,4 @@
-import { Hero, CustomFilter, SearchBar } from '@/components'
+import { Hero, CustomFilter, SearchBar,ProductList } from '@/components'
 import SetDynamicRoute from '@/utils/SetDynamicRoute'
 
 
@@ -24,6 +24,9 @@ export default function Home() {
             <CustomFilter />
             <CustomFilter />
           </div>
+        </div>
+        <div className='w-full border-2 border-black'>
+            <ProductList/>
         </div>
       </div>
     </main >
