@@ -17,7 +17,9 @@ async function refreshAccessToken(token) {
         method: "POST",
     })
     const refreshToken = await resp.json()
-    if (!resp.ok) throw refreshToken
+    console.log(refreshToken);
+    
+    if (!resp.ok) throw console.log("problem refreshing token --------")
     return {
         ...token,
         access_token:refreshToken.access_token,
@@ -41,7 +43,7 @@ export const authOptions = {
             const nowTimeStamp = Math.floor(Date.now() / 1000)
             console.log("-------token----------")
             if (account) { //first time signing account will not be null athore wise account will be null
-                console.log('---------------callbak---------')
+                console.log('---------------callbak acccount---------')
                 token.decoded = jwtDecode(account.access_token)
                 token.access_token = account.access_token
                 token.id_token = account.id_token
@@ -64,7 +66,6 @@ export const authOptions = {
                     }
                 }
             }
-            return token
         },
 
         async session({ session, token }) {

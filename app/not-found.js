@@ -1,8 +1,7 @@
 import React from 'react'
 
-const UnautorizedPage = () => {
+const NotFound = () => {
   return (
-
     <>
       {/*
           This example requires updating your template:
@@ -32,7 +31,6 @@ const UnautorizedPage = () => {
       </main>
     </>
   )
-
 }
 
-export default UnautorizedPage
+export default NotFound

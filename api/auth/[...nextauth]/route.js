@@ -21,7 +21,6 @@ export const authOptions = {
                 token.refresh_token=account.refresh_token
                 return token
             }else if(nowTimeStamp<token.expires_at){
-
                 //token has not expired yet, return it
                 return token
             }else{

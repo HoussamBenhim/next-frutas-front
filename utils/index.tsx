@@ -20,22 +20,22 @@ function getAllProducts() {
 }
 function addProduct(token:string) {
     return instance.post('/api/products', JSON.stringify({
-        "name": "fraises costarica",
-        "eancode": 3234,
+        "productName": "patates douces",
+        "price": 12.2,
+        "priceUnit": "KG",
         "category": {
-            "categoryName": "fruits",
-            "subCategoryName": "fraise",
-            "familyName": "qsdkljml"
+            "categoryName": "legumes",
+            "familyName": "patates"
         }
     }), {
-        headers: { 'Authorization': bearerAuth(token),"Content-Type": "application/json", }
+        headers: { Authorization: bearerAuth(token),"Content-Type": "application/json", }
     })
 }
 
 
 
 const instance = axios.create({
-    baseURL: process.env.BACK_END_BASE_URL
+    baseURL: process.env.NEXT_PUBLIC_BACK_END_BASE_URL
 })
 
 instance.interceptors.response.use(response => {

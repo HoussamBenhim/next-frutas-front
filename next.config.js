@@ -4,7 +4,7 @@ const nextConfig = {
         return [
             {
                 source: '/api/products/all', // Match any request starting with '/api/products'
-                destination: 'http://localhost:8180/api/products/all', // Replace with your API endpoint
+                destination: 'http://localhost:8081/api/products/all', // Replace with your API endpoint
             },
         ];
     },

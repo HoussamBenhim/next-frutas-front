@@ -1,12 +1,26 @@
-import { Hero, CustomFilter, SearchBar,ProductList } from '@/components'
+import { Hero, CustomFilter, SearchBar, ProductList } from '@/components'
 import SetDynamicRoute from '@/utils/SetDynamicRoute'
+import { useState } from 'react'
+import { productApp } from '@/utils'
 
-
-export default function Home() {
-  console.log(11)
+export default  async function Home() {
+  const fetchData = async () => {
+    try {
+      const resp = await productApp.getAllProducts()
+      console.log(resp.data);
+      
+      return resp.data
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+  const productList = await fetchData();
+  const productListIsEmpty = !Array.isArray(productList) || productList.length < 1 
+  console.log(productListIsEmpty);
+  console.log(productList);
   return (
     <main className="overflow-hidden flex flex-col items-stretch">
-      <SetDynamicRoute/>
+      <SetDynamicRoute />
       <div className='bg-light-green flex h-screen flex-col items-center justify-between lg:py-24 -m-16'>
         <Hero />
       </div>
@@ -26,7 +40,12 @@ export default function Home() {
           </div>
         </div>
         <div className='w-full border-2 border-black'>
-            <ProductList/>
+          {productListIsEmpty ? (
+            <div>opps no results</div>
+          ) :
+            <ProductList products={productList} />
+          }
+
         </div>
       </div>
     </main >

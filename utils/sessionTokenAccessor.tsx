@@ -6,7 +6,6 @@ export async function getAccessToken(){
     const session = await getServerSession(authOptions)
     if(session){
         console.log('session access token');
-        console.log(session.access_token);
         const accessTokenDecrypted = decrypt(session.access_token)
         return accessTokenDecrypted
     }
@@ -16,13 +15,9 @@ export async function getAccessToken(){
 export async function getIdToken(){
     
     const session = await getServerSession(authOptions)
-    console.log('session is : ');
-    
-    console.log(session);
     
     if(session){
         console.log('session id token');
-        console.log(session.id_token);
         const idTokenDecrypted = decrypt(session.id_token)
         return idTokenDecrypted
     }
