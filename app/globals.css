@@ -26,7 +26,7 @@ body {
   fill: aqua;
 }
 .filters__container{
-  @apply mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8 border-2 border-black
+  @apply mx-auto w-full max-w-7xl overflow-hidden sm:px-6 lg:px-4 border-2 border-black
 }
 
 

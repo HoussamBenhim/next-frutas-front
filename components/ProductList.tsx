@@ -6,7 +6,7 @@ import React from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { CustomButton } from '.'
-
+import BananeImage from '../public/assets/images/bananas-575773_640.png'
 // const products = [
 //   {
 //     id: 1,
@@ -73,7 +73,7 @@ const ProductList = ({ products }) => {
                             <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
                                 <Image
                                     layout='fill'
-                                    src={product.imageSrc}
+                                    src={BananeImage}
                                     alt="Picture of the author"
                                     objectFit="cover" // change to suit your needs
                                     className="rounded-lg z-0" // just an example
