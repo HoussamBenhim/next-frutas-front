@@ -2,7 +2,7 @@ import {MouseEventHandler} from "react"
 export interface CustomButtonProps{
     title: String;
     containerStyles?: String;
-    handelClick?:(param:String)=>MouseEventHandler<HTMLButtonElement>
+    handelClick?:(param?:String)=>MouseEventHandler<HTMLButtonElement>
 }
 
 export interface SearchProductProps{
@@ -14,3 +14,7 @@ export interface SignInOutProps{
 
     handelClick?:(param:String)=>MouseEventHandler<HTMLButtonElement>|void
 }
+interface navtIem {
+    title: string; active: boolean
+  }
+export interface navtemsInterface extends Array<navtIem> { }

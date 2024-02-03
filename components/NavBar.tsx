@@ -11,7 +11,7 @@ import { SignInOut } from '.'
 import SessionProviderWrapper from './SessionProviderWrapper'
 import { signIn, signOut } from 'next-auth/react'
 import { log } from 'console'
-
+import { navtemsInterface } from '@/types'
 
 
 
@@ -34,10 +34,7 @@ export default function NavBar() {
     navBarItems.map(item => intialState.push({ title: item.title, active: false }))
     return intialState
   }
-  interface navtIem {
-    title: string; active: boolean
-  }
-  interface navtemsInterface extends Array<navtIem> { }
+ 
   const [navState, setNavState] = useState<navtemsInterface>(getIntialState())
 
   const handelClickSignInOut = (param: String) => {
