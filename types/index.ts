@@ -18,3 +18,20 @@ interface navtIem {
     title: string; active: boolean
   }
 export interface navtemsInterface extends Array<navtIem> { }
+
+export interface ProductProps {
+    product:Product
+}
+export interface Product{
+    id:string;
+    productName:string;
+    category:CategoryProps;
+    price:number;
+    unite:string;
+    origin:string;
+    description:string;
+}
+export interface CategoryProps {
+    categoryName:string;
+    family:string;
+}
