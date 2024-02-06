@@ -2,7 +2,7 @@ import {MouseEventHandler} from "react"
 export interface CustomButtonProps{
     title: String;
     containerStyles?: String;
-    handelClick?:(param?:String)=>MouseEventHandler<HTMLButtonElement>
+    handelClick?:MouseEventHandler<HTMLButtonElement>
 }
 
 export interface SearchProductProps{
@@ -27,7 +27,7 @@ export interface Product{
     productName:string;
     category:CategoryProps;
     price:number;
-    unite:string;
+    priceUnit:string;
     origin:string;
     description:string;
 }

@@ -7,6 +7,7 @@ import SearchBar from './SearchBar'
 import SearchProduct from './SearchProduct'
 import SignInOut from './SignInOut'
 import ProductList from './ProductList'
+import ProductDetails from './ProductDetails'
 export{
     Hero,
     CustomButton,
@@ -16,5 +17,6 @@ export{
     SearchBar,
     SearchProduct,
     SignInOut,
-    ProductList
+    ProductList,
+    ProductDetails
 }
